@@ -1,3 +1,4 @@
+//extensions
 
 tableextension 50106 CustomerExt extends Customer
 {
