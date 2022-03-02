@@ -45,7 +45,7 @@ report 50102 "Customer Report"
                 CustLedgerEntry: Record "Cust. Ledger Entry";
             begin
                 CustLedgerEntry.Init();
-                //CustLedgerEntry.SetLoadFields("Amount (LCY)");
+                CustLedgerEntry.SetLoadFields("Amount (LCY)");
                 CustLedgerEntry.SetRange("Customer No.", "No.");
                 AmountCount := CustLedgerEntry.Count();
                 AmountSum := 0;
