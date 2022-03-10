@@ -5,6 +5,9 @@ table 50103 "FreeGifts"
     LookupPageId = "Free Gift List";
     Caption = 'Free Gifts';
 
+    Extensible = true;
+    Scope = Cloud;
+
     fields
     {
         field(1; CustomerCategoryCode; Code[20])

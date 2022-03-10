@@ -6,6 +6,8 @@ report 50102 "Customer Report"
     RDLCLayout = 'CustomerReport.rdlc';
     Caption = 'Customers (RDLC)';
 
+    Extensible = true;
+
     dataset
     {
         dataitem(Customer; Customer)
@@ -39,6 +41,19 @@ report 50102 "Customer Report"
             {
 
             }
+            column(Random; Random(100))
+            {
+
+            }
+            column(RandomD; MyRandom)
+            {
+
+            }
+            column(ChartName; ChartNameLbl)
+            {
+
+            }
+
 
             trigger OnAfterGetRecord()
             var
@@ -82,6 +97,13 @@ report 50102 "Customer Report"
     var
         AmountCount: Integer;
         AmountSum: Decimal;
+
+        ChartNameLbl: Label 'Char with random values';
+
+    procedure MyRandom(): Decimal
+    begin
+        exit(Random(1000) / 10.0);
+    end;
 
 }
 /*číslo, meno, adresa, mesto
