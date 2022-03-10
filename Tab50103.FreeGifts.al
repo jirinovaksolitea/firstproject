@@ -5,7 +5,7 @@ table 50103 "FreeGifts"
     LookupPageId = "Free Gift List";
     Caption = 'Free Gifts';
 
-    Extensible = true;
+    //Extensible = true;
     Scope = Cloud;
 
     fields
